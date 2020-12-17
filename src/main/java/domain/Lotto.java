@@ -9,6 +9,8 @@ public class Lotto {
     private final List<Integer> numbers;
 
     public Lotto(List<Integer> numbers) {
+        LottoFactory.validateNonDuplicateNumbers(numbers);
+        LottoFactory.validateRange(numbers);
         this.numbers = numbers;
     }
     // 추가 기능 구현
