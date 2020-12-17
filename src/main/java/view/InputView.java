@@ -8,7 +8,7 @@ public class InputView {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static Money inputMoney() {
-        System.out.println("구입할 금액을 입력하세요.");
+        System.out.println("## 구입할 금액을 입력하세요.");
         int money = Integer.parseInt(getInput());
         try {
             return new Money(money);

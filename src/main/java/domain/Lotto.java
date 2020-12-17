@@ -11,6 +11,11 @@ public class Lotto {
     public Lotto(List<Integer> numbers) {
         this.numbers = numbers;
     }
-
     // 추가 기능 구현
+
+
+    @Override
+    public String toString() {
+        return numbers.toString();
+    }
 }
